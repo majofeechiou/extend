@@ -1,0 +1,29 @@
+{
+  "name": "extend",
+  "version": "1.0.0",
+  "description": "use JavaScript to extend",
+  "main": "index.js",
+  "scripts": {
+    "build:min": "webpack --config webpack.config.production.js",
+    "build": "webpack --config webpack.config.development.js",
+    "dev": "webpack --config webpack.config.development.js --watch",
+    "host": "webpack-dev-server --config webpack.config.development.js --watch --hot --content-base build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majofeechiou/extend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majofeechiou/extend/issues"
+  },
+  "homepage": "https://github.com/majofeechiou/extend#readme",
+  "devDependencies": {
+    "deep-extend": "^0.4.1",
+    "json-extend": "^0.1.0",
+    "script-loader": "^0.7.0",
+    "webpack": "^1.13.0"
+  }
+}
